@@ -11,4 +11,20 @@ const message = {
     question: questionArr,
     answer: answerArr,
     wish: wishArr,
+    selectGreet() {
+        let selection = this.greet[Math.floor(Math.random() * (this.greet.length - 1))];
+        return selection;
+    }, 
+    selectQuestion() {
+        let selection = this.question[Math.floor(Math.random() * (this.question.lenght - 1))];
+        return selection;
+    },
+    selectAnswer() {
+        let selection = this.answer[Math.floor(Math.random() * (this.answer.length - 1))];
+        return selection;
+    },
+    selectWish() {
+        let selection = this.wish[Math.floor(Math.random() * (this.wish.length - 1))];
+        return selection;
+    }
 };
