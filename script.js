@@ -16,7 +16,7 @@ const message = {
         return selection;
     }, 
     selectQuestion() {
-        let selection = this.question[Math.floor(Math.random() * (this.question.lenght - 1))];
+        let selection = this.question[Math.floor(Math.random() * (this.question.length - 1))];
         return selection;
     },
     selectAnswer() {
@@ -30,7 +30,7 @@ const message = {
 };
 
 const generateMessage = obj => {
-    let result = `${obj.selectGreet()}! \n ${obj.selectQuestion()}? \n ${obj.selectAnswer()}. \n ${str.toUpperCase()} \n ${selectWish()}.`
+    let result = `${obj.selectGreet()}! \n ${obj.selectQuestion()}? \n ${obj.selectAnswer()}. \n ${str.toUpperCase()} \n ${obj.selectWish()}.`;
     return result;
 }
 
