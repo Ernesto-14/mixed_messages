@@ -28,3 +28,10 @@ const message = {
         return selection;
     }
 };
+
+const generateMessage = obj => {
+    let result = `${obj.selectGreet()}! \n ${obj.selectQuestion()}? \n ${obj.selectAnswer()}. \n ${str.toUpperCase()} \n ${selectWish()}.`
+    return result;
+}
+
+console.log(generateMessage(message));
